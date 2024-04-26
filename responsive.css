@@ -1,10 +1,9 @@
-
-
-
+  
+    
 @media screen and (max-width:700px) {
 
     .items{
-        width: 35%;
+        width: 25%;
         color: maroon;
        font-size:small;
     
@@ -13,6 +12,9 @@
     
     header{
         height: fit-content;
+        position: relative;
+        left:0;
+        right: 0;
         
      }
        nav{
@@ -48,7 +50,7 @@
     }
     
     .introduction{
-        width: 50%;
+        width: 60%;
         left: 22%;
     }
     
@@ -61,10 +63,9 @@
         transform: scale(1);
     }
     .item{
-        width: 40%;
-        padding: 13px;
-    }
+        width:45%;
+        padding: 10px;
+       flex: 1;
+        }
       
     }
-    
-    
