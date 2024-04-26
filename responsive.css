@@ -1,0 +1,70 @@
+
+
+
+@media screen and (max-width:700px) {
+
+    .items{
+        width: 35%;
+        color: maroon;
+       font-size:small;
+    
+    }
+    
+    
+    header{
+        height: fit-content;
+        
+     }
+       nav{
+       flex-direction:column;
+    float:none;
+     top: 13%;
+     left:10px;
+     position: absolute;
+     width: fit-content;
+     padding: 0;
+     visibility: hidden;
+     z-index: 1;
+     height: 85%;
+     background-image: url(images/block1.jpg);
+    
+      }
+    
+        nav a{
+        margin-top:35px;
+        color: #fff;
+       }
+    
+       #nav-btn{
+        left: 0;
+       }
+    
+    .title{
+        font-size: x-large;
+        left:22%;
+        width: 50%;
+      
+        
+    }
+    
+    .introduction{
+        width: 50%;
+        left: 22%;
+    }
+    
+    .home_section{
+        color:#fff;
+        background-image:radial-gradient( circle, wheat 70%,maroon 2%);
+    }
+    /*for gallery pages*/
+    .zoomed {
+        transform: scale(1);
+    }
+    .item{
+        width: 40%;
+        padding: 13px;
+    }
+      
+    }
+    
+    

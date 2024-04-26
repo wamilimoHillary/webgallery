@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+/*-------------hearder...................--*/
+header{
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+      height: 75vh;
+    background-image: url(images/block1.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    animation:header_animate 5s ease-in-out 1.5s normal infinite;
+}
+
+@keyframes header_animate{
+    0%{ background-image: url(images/block1.jpg);background-position:100% 100%;}
+   35%{ background-image: url(images/f1.jpg); background-position:10% 100%;}
+   50%{ background-image: url(images/p3.png);background-position:100% 10% ;}
+   75%{ background-image: url(images/fo1.jpg);background-position: 50% 10%  ;}
+   100%{ background-image: url(images/CAR1.png);background-position: 100% 100%  ;}
+}
+
+
+
+
+nav{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: large;
+    font-style: bold;
+
+     
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 30px;
+  
+}
+
+ nav a:hover{
+    color:#fff;
+    text-shadow: 1px 1px 0 #fd6d25, 2px 2px 0  #fd6d25;
+}
+
+#nav-btn{
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px auto auto 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: xx-large;
+}
+
+/*......dropdown div home page..............*/
+.library_link {
+    position: relative;
+    display:block;
+    background-color:  rgb(255, 116, 9);
+    width:fit-content;
+    color: #fff;
+  
+  }
+  
+  .hidden_links{
+    display:none;
+    background-color:rgb(138, 26, 3);
+    position:relative;
+    width: 100%;
+    height:fit-content;
+    box-shadow: 5px 15px 16px 0px  rgb(255, 116, 9);
+    z-index: 1;  
+   
+  }
+  
+  .library_link:hover .hidden_links{
+  display: block;
+  
+  }
+
+  .library_link:hover .hidden_links a{
+    display: block;
+    color: #fff;
+    
+    }
+
+
+
+.title{
+    color:#fff;
+   position: relative;
+left:20%;
+top: 10%;
+width: fit-content;
+font-size: x-large;
+text-align: center;
+text-shadow: 1px 1px rgb(138, 26, 3), 2px 2px rgb(138,26, 3), 3px 3px  rgb(138, 26, 3);
+}
+
+.introduction{
+    color:#fff;
+position: relative;
+left:30%;
+top: 10%;
+width: 20%; 
+padding: 20px;
+background-image: url(images/block1.jpg);
+background-size: 100%;
+
+
+}
+
+
+section{
+    text-align: center;
+    background-image:radial-gradient( circle, wheat 70%,maroon 2%, wheat);
+    color: brown;
+    padding: 5px;
+}
+
+/* ----------------row container--------*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 20px ;
+    
+}
+/*--------------------columns--------------*/
+.items{
+    width: 20%;
+    flex-grow: 1;
+    flex-basis: 200;
+    padding: 0;
+    color:maroon;
+      text-align: justify;
+    margin:10px 30px;
+    border-radius: 20px 20px 0 0;
+    background-color: wheat;
+    
+    }
+
+    @keyframes rotate_items{
+        0%{ transform: rotateY(0deg);}
+        50%{ transform: rotateY(30deg);}
+        75%{ transform: rotateX(0deg);}
+        100%{ transform: rotateX(30deg);}
+    }
+
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid wheat;
+    animation: rotate_items 3s alternate 1s infinite; 
+   }
+
+footer{
+    text-align: center;
+    background-color: maroon;
+    height: auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 26px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+footer a:hover{
+    opacity: 0.5;
+}
+
