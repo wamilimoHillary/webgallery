@@ -3,10 +3,10 @@
 @media screen and (max-width:700px) {
 
     .items{
-        width: 25%;
+        width: 35%;
         color: maroon;
        font-size:small;
-    
+       margin: 15px;
     }
     
     
@@ -62,10 +62,14 @@
     .zoomed {
         transform: scale(1);
     }
-    .item{
-        width:45%;
-        padding: 10px;
-       flex: 1;
-        }
-      
-    }
+    .container{
+        box-shadow: 8px 4px 5px wheat inset;
+        margin: 0px 3px ;
+            }
+        
+            .item{
+                width:50%;
+                flex:40%;
+            }
+              
+            }
