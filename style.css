@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding:0;
+   
 }
 
 
@@ -48,6 +49,7 @@ nav a{
     margin: 5px 10px;
     font-size: 30px;
   
+  
 }
 
  nav a:hover{
@@ -72,6 +74,7 @@ nav a{
     background-color:  rgb(255, 116, 9);
     width:fit-content;
     color: #fff;
+    
   
   }
   
@@ -129,6 +132,7 @@ section{
     background-image:radial-gradient( circle, wheat 70%,maroon 2%, wheat);
     color: brown;
     padding: 5px;
+   
 }
 
 /* ----------------row container--------*/
@@ -136,6 +140,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     margin: auto 20px ;
+   
+    
     
 }
 /*--------------------columns--------------*/
@@ -150,14 +156,13 @@ section{
     border-radius: 20px 20px 0 0;
     background-color: wheat;
     
+    
     }
 
     @keyframes rotate_items{
         0%{ transform: rotateY(0deg);}
-        50%{ transform: rotateY(30deg);}
-        75%{ transform: rotateX(0deg);}
-        100%{ transform: rotateX(30deg);}
-    }
+        50%{ transform: rotateY(15deg);}
+           }
 
 .img{
     width: 100%;
@@ -166,6 +171,22 @@ section{
     border: 2px solid wheat;
     animation: rotate_items 3s alternate 1s infinite; 
    }
+
+   #football{
+       background-position: 40% 40%;
+    background-size: cover;
+    animation:football_animate 7s ease-in-out 0s normal infinite;
+}
+
+@keyframes football_animate{
+    0%{ background-image: url(images/fo16.jpg)}
+   35%{ background-image: url(images/fo14.jpg)}
+   50%{ background-image: url(images/fo23.jpg)}
+   75%{ background-image: url(images/fo20.jpg)}
+   100%{ background-image: url(images/fo7.jpg)}
+}
+
+
 
 footer{
     text-align: center;
@@ -178,6 +199,7 @@ footer{
     padding: 26px;
     color: #fff;
     font-weight: bolder;
+    
 }
 
 footer a:hover{

@@ -1,7 +1,13 @@
   
     
 @media screen and (max-width:700px) {
+ *{
+    margin: 0;
+    padding: 0;
+ 
+ }
 
+ 
     .items{
         width: 35%;
         color: maroon;
@@ -15,6 +21,7 @@
         position: relative;
         left:0;
         right: 0;
+       
         
      }
        nav{
@@ -29,12 +36,14 @@
      z-index: 1;
      height: 85%;
      background-image: url(images/block1.jpg);
+      
     
       }
     
         nav a{
         margin-top:35px;
         color: #fff;
+        
        }
     
        #nav-btn{
@@ -42,25 +51,28 @@
        }
     
     .title{
-        font-size: x-large;
+        font-size: medium;
         left:22%;
         width: 50%;
-      
+            
         
     }
     
     .introduction{
         width: 60%;
         left: 22%;
+      
     }
     
     .home_section{
         color:#fff;
         background-image:radial-gradient( circle, wheat 70%,maroon 2%);
+        
     }
     /*for gallery pages*/
     .zoomed {
         transform: scale(1);
+            
     }
     .container{
         box-shadow: 8px 4px 5px wheat inset;
@@ -72,4 +84,13 @@
                 flex:40%;
             }
               
+            #football{
+                height: 250px;
+              
+            }
+
+            footer{
+               padding: 1px; 
+
+            }
             }
